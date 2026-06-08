@@ -1,0 +1,1 @@
+# kokorotomirai.ai
