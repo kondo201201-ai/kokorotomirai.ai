@@ -35,6 +35,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top;
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
@@ -342,10 +343,7 @@
   <div class="slideshow">
     <img src="01.jpg" class="active" alt="">
     <img src="02.jpg" alt="">
-    <img src="03.jpg" alt="">
-    <img src="04.jpg" alt="">
     <img src="05.jpg" alt="">
-    <img src="06.jpg" alt="">
     <img src="07.jpg" alt="">
   </div>
   <div class="slide-overlay"></div>
@@ -604,12 +602,17 @@
 <script>
   const slides = document.querySelectorAll('.slideshow img');
   let current = 0;
-  setInterval(() => {
+ 
+  function nextSlide() {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
-  }, 1200); // 1.2秒ごとに切り替え
+    // 最後の画像は30秒、それ以外は1.2秒
+    const delay = (current === slides.length - 1) ? 30000 : 1200;
+    setTimeout(nextSlide, delay);
+  }
+ 
+  setTimeout(nextSlide, 1200);
 </script>
 </body>
 </html>
- 
