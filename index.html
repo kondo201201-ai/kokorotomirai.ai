@@ -6,14 +6,14 @@
   <title>響き合う心と未来</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
- 
+
     body {
       font-family: 'Hiragino Mincho ProN', 'Yu Mincho', Georgia, serif;
       background: #f0f2f8;
       color: #1a1a2e;
       line-height: 1.85;
     }
- 
+
     /* ─── ヘッダー（スライドショー） ─── */
     header {
       position: relative;
@@ -22,7 +22,7 @@
       overflow: hidden;
       height: 520px;
     }
- 
+
     /* スライドショー背景 */
     .slideshow {
       position: absolute;
@@ -42,7 +42,7 @@
     .slideshow img.active {
       opacity: 1;
     }
- 
+
     /* 暗いオーバーレイ（文字を読みやすく） */
     .slide-overlay {
       position: absolute;
@@ -50,7 +50,7 @@
       background: linear-gradient(to bottom, rgba(6,6,15,0.45) 0%, rgba(26,35,126,0.5) 100%);
       z-index: 1;
     }
- 
+
     /* ヘッダーのテキスト */
     .header-content {
       position: relative;
@@ -80,7 +80,7 @@
       font-size: 0.95rem;
       letter-spacing: 0.06em;
     }
- 
+
     /* ─── ナビゲーション（ボタン一覧） ─── */
     nav {
       background: linear-gradient(90deg, #06060f, #1a237e, #06060f);
@@ -115,19 +115,19 @@
       box-shadow: 0 6px 16px rgba(26,35,126,0.45);
       background: linear-gradient(135deg, #fff, #e8eaf6);
     }
- 
+
     /* ─── メインコンテンツ ─── */
     main {
       max-width: 860px;
       margin: 0 auto;
       padding: 0 20px 80px;
     }
- 
+
     section {
       margin-top: 70px;
       scroll-margin-top: 100px;
     }
- 
+
     .section-header {
       display: flex;
       align-items: center;
@@ -142,7 +142,7 @@
       letter-spacing: 0.1em;
       color: #1a237e;
     }
- 
+
     /* ─── カード ─── */
     .card {
       background: #fff;
@@ -151,7 +151,7 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       margin-bottom: 20px;
     }
- 
+
     /* ─── 概要テーブル ─── */
     .info-table { width: 100%; border-collapse: collapse; }
     .info-table tr { border-bottom: 1px solid #eee; }
@@ -163,11 +163,11 @@
       white-space: nowrap;
       width: 7em;
     }
- 
+
     /* ─── 主旨テキスト ─── */
     .purpose-text { font-size: 1.02rem; }
     .purpose-text p { margin-bottom: 16px; }
- 
+
     /* ─── プログラムセクション ─── */
     .program-part {
       border-left: 4px solid #1a237e;
@@ -182,7 +182,7 @@
       margin-bottom: 8px;
     }
     .program-part p { font-size: 0.97rem; }
- 
+
     /* ─── 出演者カード ─── */
     .performer-card {
       background: #fff;
@@ -202,7 +202,7 @@
       margin-bottom: 12px;
     }
     .performer-card p { font-size: 0.96rem; }
- 
+
     /* ─── タイムライン ─── */
     .timeline { list-style: none; }
     .timeline li {
@@ -218,7 +218,7 @@
       color: #1a237e;
       min-width: 60px;
     }
- 
+
     /* ─── チケット ─── */
     .ticket-grid {
       display: grid;
@@ -235,7 +235,7 @@
     .ticket-box .label { font-size: 0.85rem; color: #666; margin-bottom: 6px; }
     .ticket-box .price { font-size: 1.6rem; font-weight: bold; color: #2d2d5e; }
     .ticket-box .note { font-size: 0.8rem; color: #888; margin-top: 4px; }
- 
+
     .ticket-btn {
       display: block;
       text-align: center;
@@ -253,7 +253,7 @@
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(26,35,126,0.45);
     }
- 
+
     /* ─── 曲目リスト ─── */
     .music-list { list-style: none; }
     .music-list li {
@@ -276,7 +276,7 @@
     }
     .music-note-block p { margin-bottom: 14px; }
     .music-note-block p:last-child { margin-bottom: 0; }
- 
+
     /* ─── 講演 ─── */
     .lecture-box {
       background: linear-gradient(135deg, #e8eaf6, #c5cae9);
@@ -289,7 +289,7 @@
       margin-bottom: 16px;
     }
     .lecture-box p { margin-bottom: 14px; font-size: 0.97rem; }
- 
+
     /* ─── 注意事項 ─── */
     .notice-list { list-style: none; }
     .notice-list li {
@@ -305,7 +305,7 @@
       color: #1a237e;
     }
     .notice-list li:last-child { border-bottom: none; }
- 
+
     /* ─── お問い合わせ ─── */
     .contact-box {
       background: linear-gradient(135deg, #06060f, #1a237e);
@@ -317,7 +317,7 @@
     .contact-box .org { font-size: 1.15rem; font-weight: bold; margin-bottom: 6px; }
     .contact-box .tel { font-size: 1.5rem; font-weight: bold; letter-spacing: 0.05em; margin-bottom: 6px; }
     .contact-box .address { font-size: 0.9rem; opacity: 0.8; }
- 
+
     /* ─── フッター ─── */
     footer {
       text-align: center;
@@ -327,7 +327,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.05em;
     }
- 
+
     @media (max-width: 600px) {
       .card { padding: 20px 18px; }
       .ticket-grid { grid-template-columns: 1fr; }
@@ -336,7 +336,7 @@
   </style>
 </head>
 <body>
- 
+
 <!-- ヘッダー -->
 <header>
   <!-- スライドショー背景 -->
@@ -347,7 +347,7 @@
     <img src="07.jpg" alt="">
   </div>
   <div class="slide-overlay"></div>
- 
+
   <!-- テキスト -->
   <div class="header-content">
     <span class="emoji">🎻🎹</span>
@@ -356,7 +356,7 @@
     <div class="date-badge">📅 2025年12月7日（日）16:00開演</div>
   </div>
 </header>
- 
+
 <!-- ナビゲーション -->
 <nav>
   <div class="nav-grid">
@@ -372,9 +372,9 @@
     <a href="#contact">📞 お問い合わせ</a>
   </div>
 </nav>
- 
+
 <main>
- 
+
   <!-- 開催概要 -->
   <section id="overview">
     <div class="section-header">
@@ -404,7 +404,7 @@
       </table>
     </div>
   </section>
- 
+
   <!-- イベントの主旨 -->
   <section id="purpose">
     <div class="section-header">
@@ -421,7 +421,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- プログラム -->
   <section id="program">
     <div class="section-header">
@@ -439,35 +439,35 @@
       演奏：島 泰子（ヴァイオリン）・吉山 輝（ピアノ）</p>
     </div>
   </section>
- 
+
   <!-- 出演者紹介 -->
   <section id="performers">
     <div class="section-header">
       <span class="icon">👤</span>
       <h2>出演者紹介</h2>
     </div>
- 
+
     <div class="performer-card">
       <h3>島 泰子</h3>
       <div class="role">ヴァイオリニスト</div>
       <p>神戸女学院高等学部在学中に全日本学生音楽コンクール高校の部全国第一位入賞。桐朋学園大学卒業後ベルン音楽院から奨学金を受け留学、ソリストコース修了。江藤俊哉、イゴール・オジム氏に師事。約三年間Serenata Basel（室内管弦楽団）第一ヴァイオリン奏者を勤めた後、デンマーク各地で10回のリサイタル、スイス・フリブールの教会で定期的に演奏、2005年にはパレスチナのラマラ、ベツレヘムでリサイタル等、各地で演奏。</p>
       <p style="margin-top:10px;">2018年4月から宮城県在住、仙台等でのコンサートに出演。西宮での演奏は2013年に西宮ジュニアオーケストラとの共演以来12年ぶり。桐朋学園大学附属子供のための音楽教室（仙台）、昭和音楽大学附属音楽教室仙台校講師。</p>
     </div>
- 
+
     <div class="performer-card">
       <h3>吉山 輝</h3>
       <div class="role">ピアニスト</div>
       <p>桐朋学園大学音楽学部ピアノ科を首席で卒業。讀賣新人演奏会出演。ピアノを森安芳樹氏に師事。以後、日本各地にてリサイタルや室内楽演奏会に出演している。地元の大阪では毎年2回のペースで自主公演を続け、来年は40年目を迎える。</p>
       <p style="margin-top:10px;">室内楽では今まで、大阪フィル、関西フィル、名古屋フィル、日本フィル、新日本フィル、読売日響の各コンサートマスターをはじめ、様々な楽器の首席奏者との共演を続けている。武庫川女子大学、相愛大学で長年講師を務める。NHK-FM出演、CDを3枚リリース。</p>
     </div>
- 
+
     <div class="performer-card">
       <h3>近藤 和歌子</h3>
       <div class="role">講演家 ／ ウイングッド株式会社 代表取締役</div>
       <p>ITエンジニアとして17年、人材関係の責任者を9年務めた後、2016年に独立。脳科学と「ことば」の力を融合させた独自の研修プログラムは、若手社員から経営層まで幅広く支持されている。オンライン講座では全国5万件中16位を記録。法人研修や公的機関での講師も務め、多方面で活躍中。</p>
     </div>
   </section>
- 
+
   <!-- タイムスケジュール -->
   <section id="schedule">
     <div class="section-header">
@@ -487,7 +487,7 @@
       </ul>
     </div>
   </section>
- 
+
   <!-- チケット -->
   <section id="ticket">
     <div class="section-header">
@@ -515,7 +515,7 @@
       </p>
     </div>
   </section>
- 
+
   <!-- 曲目紹介 -->
   <section id="music">
     <div class="section-header">
@@ -531,7 +531,7 @@
         <li><span class="composer">フバイ</span>そよ風</li>
         <li><span class="composer">フバイ</span>カルメン幻想曲</li>
       </ul>
- 
+
       <div class="music-note-block" style="margin-top:20px;">
         <p><strong>【演奏者より】</strong></p>
         <p>最初はモーツァルト。35年の生涯であらゆるジャンルの曲をたくさん（800以上！）作った人です。今日の演奏曲は歌劇「イドメネオ」から「ガヴォット」。やはりモーツァルトはこういう明るい音楽が多いのです。</p>
@@ -539,14 +539,14 @@
         <p>チャイコフスキーはロシアの作曲家です。美しい音楽は人間の心を打ちますし、音楽は国境や戦争を超えて生きるのです。2曲続けて演奏します。</p>
         <p>プログラムの最後はフバイ。ハンガリーの名ヴァイオリニストで、本人が演奏するために作ったので、ヴァイオリンの魅力を最大限に発揮できる「演奏の技巧」が駆使されています。時代は18世紀から20世紀、作曲者の出身国の音楽の雰囲気をお楽しみください。</p>
       </div>
- 
+
       <p style="margin-top:16px; font-size:0.88rem; color:#666;">
         W.A.Mozart (1756-1791)：Gavotte　／　J.Brahms (1833-1897)：Scherzo<br>
         Tchaikovsky (1840-1893)：Melody・Waltz-Scherzo　／　Jenö Hubay (1858-1937)：Zephir・Carmen Fantaisie
       </p>
     </div>
   </section>
- 
+
   <!-- 講演内容 -->
   <section id="lecture">
     <div class="section-header">
@@ -561,7 +561,7 @@
       <p>小さな言葉の積み重ねが、素敵な"新しい自分"につながることを、ストーリーとともにお伝えします。あなたの中にまだ眠っている可能性を、言葉と脳の力で呼び覚ませると幸いです。</p>
     </div>
   </section>
- 
+
   <!-- 注意事項 -->
   <section id="notices">
     <div class="section-header">
@@ -577,7 +577,7 @@
       </ul>
     </div>
   </section>
- 
+
   <!-- お問い合わせ -->
   <section id="contact">
     <div class="section-header">
@@ -591,18 +591,18 @@
       <div class="address">〒674-0058 兵庫県明石市大久保町駅前2-7-7-102</div>
     </div>
   </section>
- 
+
 </main>
- 
+
 <footer>
   <p>響き合う心と未来 〜音と言葉で奏でる新たな章〜</p>
   <p style="margin-top:6px;">2025年12月7日（日） 西宮市民会館 大会議室101</p>
 </footer>
- 
+
 <script>
   const slides = document.querySelectorAll('.slideshow img');
   let current = 0;
- 
+
   function nextSlide() {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
@@ -611,7 +611,7 @@
     const delay = (current === slides.length - 1) ? 30000 : 1200;
     setTimeout(nextSlide, delay);
   }
- 
+
   setTimeout(nextSlide, 1200);
 </script>
 </body>
