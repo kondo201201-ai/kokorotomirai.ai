@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>響き合う心と未来</title>
+  <title>響き合う心と未来｜2026年開催予定｜ヴァイオリンコンサート＆講演</title>
+  <meta name="description" content="音楽と言葉で、これからの人生に光を灯す特別な時間。2026年開催予定のヴァイオリンコンサート＆講演イベントです。詳細は決まり次第ご案内します。">
+  <meta property="og:title" content="響き合う心と未来｜2026年開催予定">
+  <meta property="og:description" content="音楽と言葉で、これからの人生に光を灯す特別な時間。開催案内・お問い合わせはこちら。">
+  <meta property="og:type" content="website">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -394,6 +398,91 @@
       letter-spacing: 0.05em;
     }
 
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      min-height: 50px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+    .hero-btn.primary { background: #fff; color: #1a237e; }
+    .hero-btn.secondary { border: 1px solid rgba(255,255,255,0.7); color: #fff; background: rgba(255,255,255,0.12); }
+    .quick-info {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: -34px;
+      position: relative;
+      z-index: 5;
+    }
+    .quick-info-item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .quick-info-item .label { color: #666; font-size: 0.78rem; }
+    .quick-info-item .value { color: #1a237e; font-weight: bold; font-size: 0.96rem; margin-top: 3px; }
+    .section-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      background: #1a237e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .coming-soon {
+      background: #fff8e1;
+      border: 1px solid #f0d57a;
+      color: #5f4b00;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      font-size: 0.95rem;
+    }
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 250;
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255,255,255,0.96);
+      box-shadow: 0 -4px 18px rgba(0,0,0,0.15);
+      gap: 10px;
+    }
+    .sticky-cta a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 11px 10px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .sticky-cta .inquiry { background: #1a237e; color: #fff; }
+    .sticky-cta .phone { border: 1px solid #1a237e; color: #1a237e; background: #fff; }
     /* ════════════════════════════
        スマホ対応 (max 768px)
     ════════════════════════════ */
@@ -440,6 +529,12 @@
 
       /* チケット */
       .ticket-grid { grid-template-columns: 1fr; gap: 12px; }
+      .quick-info { grid-template-columns: 1fr 1fr; margin-top: 14px; }
+      .quick-info-item { padding: 12px 10px; }
+      .hero-actions { gap: 10px; width: 100%; }
+      .hero-btn { width: 100%; min-width: 0; min-height: 46px; font-size: 0.9rem; }
+      .sticky-cta { display: flex; }
+      body { padding-bottom: 74px; }
       .ticket-btn { font-size: 0.95rem; padding: 14px; }
 
       /* 曲目 */
@@ -461,15 +556,10 @@
 
   <!-- PC用ナビ -->
   <nav class="desktop-nav">
-    <a href="#overview">開催概要</a>
-    <a href="#purpose">イベントの主旨</a>
+    <a href="#overview">概要</a>
+    <a href="#performers">出演者</a>
     <a href="#program">プログラム</a>
-    <a href="#performers">出演者紹介</a>
-    <a href="#schedule">タイムスケジュール</a>
-    <a href="#ticket">チケット</a>
-    <a href="#music">曲目紹介</a>
-    <a href="#lecture">講演内容</a>
-    <a href="#notices">注意事項</a>
+    <a href="#ticket">開催案内</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
 
@@ -483,15 +573,10 @@
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" id="menuClose">✕</button>
   <nav>
-    <a href="#overview">開催概要</a>
-    <a href="#purpose">イベントの主旨</a>
+    <a href="#overview">概要</a>
+    <a href="#performers">出演者</a>
     <a href="#program">プログラム</a>
-    <a href="#performers">出演者紹介</a>
-    <a href="#schedule">タイムスケジュール</a>
-    <a href="#ticket">チケット</a>
-    <a href="#music">曲目紹介</a>
-    <a href="#lecture">講演内容</a>
-    <a href="#notices">注意事項</a>
+    <a href="#ticket">開催案内</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
 </div>
@@ -510,11 +595,21 @@
     <span class="emoji">🎻🎹</span>
     <h1>響き合う心と未来</h1>
     <p class="subtitle">〜音と言葉で奏でる新たな章〜</p>
-    <div class="date-badge">📅 2025年12月7日（日）16:00開演</div>
+    <div class="date-badge">📅 2026年 開催予定（詳細決定次第ご案内）</div>
+    <div class="hero-actions">
+      <a class="hero-btn primary" href="#contact">開催案内について問い合わせる</a>
+      <a class="hero-btn secondary" href="#overview">イベント概要を見る</a>
+    </div>
   </div>
 </header>
 
 <main>
+  <div class="quick-info" aria-label="イベント概要">
+    <div class="quick-info-item"><div class="label">開催時期</div><div class="value">2026年予定</div></div>
+    <div class="quick-info-item"><div class="label">会場</div><div class="value">西宮市民会館</div></div>
+    <div class="quick-info-item"><div class="label">内容</div><div class="value">講演と音楽</div></div>
+    <div class="quick-info-item"><div class="label">案内</div><div class="value">決定次第掲載</div></div>
+  </div>
 
   <!-- 開催概要 -->
   <section id="overview">
@@ -524,7 +619,7 @@
     </div>
     <div class="card">
       <table class="info-table">
-        <tr><td>日時</td><td>2025年12月7日（日）16:00開演（開場 15:30）</td></tr>
+        <tr><td>日時</td><td>2026年開催予定（日程・開演時間は決まり次第ご案内します）</td></tr>
         <tr><td>会場</td><td>西宮市民会館 大会議室101<br>〒662-0918 西宮市六湛寺町10番11号<br>TEL：(0798)33-3111</td></tr>
         <tr><td>主催</td><td>響き合う心と未来</td></tr>
         <tr><td>後援</td><td>西宮市 ／ 西宮市教育委員会</td></tr>
@@ -543,7 +638,7 @@
       <div class="purpose-text">
         <p>～音楽が心に響き、言葉が明日をひらく～</p>
         <p>音楽の力と言葉の力、このふたつが重なり合うとき、人生はより豊かになります。小学生の頃、笑い合いながら遊んだふたりが、それぞれの道を歩み、いま「音」と「言葉」で再びつながります。</p>
-        <p>このイベントでは、国内外で活躍する演奏家によるヴァイオリン＆ピアノコンサートと、脳の力を活かし未来をひらく「言葉の講演」をお届けします。</p>
+        <p>このイベントでは、国内外で活躍する演奏家によるヴァイオリンコンサートと、脳の力を活かし未来をひらく「言葉の講演」をお届けします。</p>
         <p>心に染み入る演奏の響きは、忘れかけていた「大切なもの」を呼び覚まし、人生に新たな彩りを添えます。さらに「言葉の力」に触れることで、これからの人生に希望の光が差し込みます。</p>
         <p>音と言葉が響き合い、心の奥にそっと火を灯すひととき。――私たちは何歳からでも、もっと輝ける。</p>
       </div>
@@ -562,8 +657,8 @@
       <p>テーマ：「ことばを変えれば、未来が変わり、人生がもっと輝き出す～脳を活かして、新しい自分をひらく～」<br>講師：近藤 和歌子（人材コンサルタント）</p>
     </div>
     <div class="program-part">
-      <h3>第2部：ヴァイオリン＆ピアノコンサート（約50分）</h3>
-      <p>テーマ：「美しい音楽は人間の心を打ち、国境や戦争を超えて生きる。ヴァイオリンの魅力を最大限にお届けし、響き合う音色から新たな感動へ」<br>演奏：島 泰子（ヴァイオリン）・吉山 輝（ピアノ）</p>
+      <h3>第2部：ヴァイオリンコンサート（予定）</h3>
+      <p>テーマ：「美しい音楽は人間の心を打ち、国境や戦争を超えて生きる。ヴァイオリンの魅力を最大限にお届けし、響き合う音色から新たな感動へ」<br>演奏：島 泰子（ヴァイオリン）</p>
     </div>
     <a href="#top" class="back-to-top">▲ トップへ戻る</a>
   </section>
@@ -580,13 +675,7 @@
       <p>神戸女学院高等学部在学中に全日本学生音楽コンクール高校の部全国第一位入賞。桐朋学園大学卒業後ベルン音楽院から奨学金を受け留学、ソリストコース修了。江藤俊哉、イゴール・オジム氏に師事。約三年間Serenata Basel（室内管弦楽団）第一ヴァイオリン奏者を勤めた後、デンマーク各地で10回のリサイタル、スイス・フリブールの教会で定期的に演奏、2005年にはパレスチナのラマラ、ベツレヘムでリサイタル等、各地で演奏。</p>
       <p style="margin-top:10px;">2018年4月から宮城県在住、仙台等でのコンサートに出演。西宮での演奏は2013年に西宮ジュニアオーケストラとの共演以来12年ぶり。桐朋学園大学附属子供のための音楽教室（仙台）、昭和音楽大学附属音楽教室仙台校講師。</p>
     </div>
-    <div class="performer-card">
-      <h3>吉山 輝</h3>
-      <div class="role">ピアニスト</div>
-      <p>桐朋学園大学音楽学部ピアノ科を首席で卒業。讀賣新人演奏会出演。ピアノを森安芳樹氏に師事。以後、日本各地にてリサイタルや室内楽演奏会に出演している。地元の大阪では毎年2回のペースで自主公演を続け、来年は40年目を迎える。</p>
-      <p style="margin-top:10px;">室内楽では今まで、大阪フィル、関西フィル、名古屋フィル、日本フィル、新日本フィル、読売日響の各コンサートマスターをはじめ、様々な楽器の首席奏者との共演を続けている。武庫川女子大学、相愛大学で長年講師を務める。NHK-FM出演、CDを3枚リリース。</p>
-    </div>
-    <div class="performer-card">
+<div class="performer-card">
       <h3>近藤 和歌子</h3>
       <div class="role">講演家 ／ ウイングッド株式会社 代表取締役</div>
       <p>ITエンジニアとして17年、人材関係の責任者を9年務めた後、2016年に独立。脳科学と「ことば」の力を融合させた独自の研修プログラムは、若手社員から経営層まで幅広く支持されている。オンライン講座では全国5万件中16位を記録。法人研修や公的機関での講師も務め、多方面で活躍中。</p>
@@ -606,7 +695,7 @@
         <li><span class="time">16:00</span><span>開演</span></li>
         <li><span class="time">16:05</span><span>第１部 講演　講師：近藤 和歌子</span></li>
         <li><span class="time">16:50</span><span>休憩</span></li>
-        <li><span class="time">17:00</span><span>第２部 ヴァイオリン＆ピアノコンサート　演奏：島 泰子（ヴァイオリン）・吉山 輝（ピアノ）</span></li>
+        <li><span class="time">17:00</span><span>第２部 ヴァイオリンコンサート　演奏：島 泰子（ヴァイオリン）</span></li>
         <li><span class="time">17:50</span><span>休憩（10分）／中締め</span></li>
         <li><span class="time">18:00</span><span>座談会（自由参加、出演者と共に感想や気づきを語り合う時間）</span></li>
         <li><span class="time">19:00</span><span>終演</span></li>
@@ -619,27 +708,17 @@
   <section id="ticket">
     <div class="section-header">
       <span class="icon">🎟</span>
-      <h2>チケット情報</h2>
+      <h2>開催案内</h2>
     </div>
     <div class="card">
-      <div class="ticket-grid">
-        <div class="ticket-box">
-          <div class="label">前売り</div>
-          <div class="price">¥2,500</div>
-          <div class="note">小学生 ¥1,000</div>
-        </div>
-        <div class="ticket-box">
-          <div class="label">当日</div>
-          <div class="price">¥3,000</div>
-        </div>
-      </div>
-      <a class="ticket-btn" href="https://forms.gle/SEJtXrwLb4tzYwAY9" target="_blank">🎫 チケット申し込みはこちら</a>
+      <div class="coming-soon">2026年の開催日・チケット情報は、決まり次第こちらでご案内します。</div>
+      <a class="ticket-btn" href="#contact">開催案内について問い合わせる</a>
       <p style="font-size:0.82rem; color:#888; margin-top:12px; text-align:center;">
-        ※ご案内メールが届かない場合や内容を変更したい場合は、再度ご入力をお願いします。<br>
-        ※クレジットカード等をご利用の場合はBASE（Amazon Pay等）をご選択ください。
+        出演内容やお申し込み方法が決まりましたら、このページでお知らせします。<br>
+        お問い合わせはお電話でも承ります。
       </p>
     </div>
-    <a href="#top" class="back-to-top">▲ トップへ戻る</a>
+    <a href="#contact" class="section-cta">お問い合わせへ</a>
   </section>
 
   <!-- 曲目紹介 -->
@@ -649,27 +728,10 @@
       <h2>曲目紹介</h2>
     </div>
     <div class="card">
-      <ul class="music-list">
-        <li><span class="composer">モーツァルト</span>ガヴォット ト長調（歌劇「イドメネオ」K.366より）</li>
-        <li><span class="composer">ブラームス</span>スケルツォ</li>
-        <li><span class="composer">チャイコフスキー</span>メロディー</li>
-        <li><span class="composer">チャイコフスキー</span>ワルツ・スケルツォ</li>
-        <li><span class="composer">フバイ</span>そよ風</li>
-        <li><span class="composer">フバイ</span>カルメン幻想曲</li>
-      </ul>
-      <div class="music-note-block" style="margin-top:20px;">
-        <p><strong>【演奏者より】</strong></p>
-        <p>最初はモーツァルト。35年の生涯であらゆるジャンルの曲をたくさん（800以上！）作った人です。今日の演奏曲は歌劇「イドメネオ」から「ガヴォット」。やはりモーツァルトはこういう明るい音楽が多いのです。</p>
-        <p>次はブラームス。「スケルツォ」はイタリア語で「冗談」を意味しますが、ブラームスはピアニストなのでピアノの重厚な音色を生かした曲です。ヴァイオリンも負けずに重厚な音を響かせます。</p>
-        <p>チャイコフスキーはロシアの作曲家です。美しい音楽は人間の心を打ちますし、音楽は国境や戦争を超えて生きるのです。2曲続けて演奏します。</p>
-        <p>プログラムの最後はフバイ。ハンガリーの名ヴァイオリニストで、本人が演奏するために作ったので、ヴァイオリンの魅力を最大限に発揮できる「演奏の技巧」が駆使されています。</p>
-      </div>
-      <p style="margin-top:16px; font-size:0.88rem; color:#666;">
-        W.A.Mozart (1756-1791)：Gavotte　／　J.Brahms (1833-1897)：Scherzo<br>
-        Tchaikovsky (1840-1893)：Melody・Waltz-Scherzo　／　Jenö Hubay (1858-1937)：Zephir・Carmen Fantaisie
-      </p>
+      <div class="coming-soon">2026年の演奏曲目は、決まり次第こちらでご案内します。</div>
+      <p>出演者・演奏内容の詳細は、確定後に順次掲載いたします。</p>
     </div>
-    <a href="#top" class="back-to-top">▲ トップへ戻る</a>
+    <a href="#contact" class="section-cta">開催案内について問い合わせる</a>
   </section>
 
   <!-- 講演内容 -->
@@ -714,7 +776,7 @@
     <div class="contact-box">
       <h3>お問い合わせ先</h3>
       <div class="org">響き合う心と未来 事務局　イベント担当係</div>
-      <div class="tel">090-7106-9807</div>
+      <div class="tel"><a href="tel:09071069807" style="color:#fff; text-decoration:none;">090-7106-9807</a></div>
       <div class="address">〒674-0058 兵庫県明石市大久保町駅前2-7-7-102</div>
     </div>
     <a href="#top" class="back-to-top">▲ トップへ戻る</a>
@@ -722,9 +784,14 @@
 
 </main>
 
+<div class="sticky-cta">
+  <a class="inquiry" href="#contact">問い合わせる</a>
+  <a class="phone" href="tel:09071069807">電話する</a>
+</div>
+
 <footer>
   <p>響き合う心と未来 〜音と言葉で奏でる新たな章〜</p>
-  <p style="margin-top:6px;">2025年12月7日（日） 西宮市民会館 大会議室101</p>
+  <p style="margin-top:6px;">2026年開催予定 西宮市民会館</p>
 </footer>
 
 <script>
