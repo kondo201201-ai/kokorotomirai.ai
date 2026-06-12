@@ -404,8 +404,15 @@
       .topbar-logo { font-size: 0.8rem; }
 
       /* ヘッダー */
-      header { height: 65vw; min-height: 260px; }
-      .header-content { padding: 36px 16px 24px; }
+      header { height: calc(100vh - 56px); min-height: unset; }
+      .header-content {
+        padding: 0 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       header .emoji { font-size: 1.8rem; margin-bottom: 6px; }
       header .subtitle { font-size: 0.85rem; }
       header .date-badge { font-size: 0.8rem; padding: 6px 14px; margin-top: 10px; }
