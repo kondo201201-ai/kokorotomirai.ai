@@ -103,7 +103,7 @@
       position: fixed;
       inset: 0;
       z-index: 300;
-      background: linear-gradient(160deg, #06060f 0%, #1a237e 100%);
+      background: linear-gradient(160deg, #3d2200 0%, #8a5c00 50%, #c49a00 100%);
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -120,7 +120,7 @@
       top: 16px; right: 20px;
       background: none;
       border: none;
-      color: #fff;
+      color: #2c1a00;
       font-size: 2rem;
       cursor: pointer;
       line-height: 1;
@@ -131,16 +131,16 @@
     }
     .mobile-menu nav a {
       display: block;
-      color: #fff;
+      color: #2c1a00;
       text-decoration: none;
       font-size: 1.05rem;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      transition: color 0.15s, padding-left 0.15s;
+      border-bottom: 1px solid rgba(44,26,0,0.2);
+      transition: opacity 0.15s, padding-left 0.15s;
     }
     .mobile-menu nav a:last-child { border-bottom: none; }
-    .mobile-menu nav a:hover { color: #c5cae9; padding-left: 8px; }
+    .mobile-menu nav a:hover { opacity: 0.6; padding-left: 8px; }
 
     /* ════════════════════════════
        ヘッダー（スライドショー）
@@ -476,16 +476,16 @@
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" id="menuClose">✕</button>
   <nav>
-    <a href="#overview">📋 開催概要</a>
-    <a href="#purpose">🌟 イベントの主旨</a>
-    <a href="#program">📜 プログラム</a>
-    <a href="#performers">👤 出演者紹介</a>
-    <a href="#schedule">🕰️ タイムスケジュール</a>
-    <a href="#ticket">🎟 チケット</a>
-    <a href="#music">🎼 曲目紹介</a>
-    <a href="#lecture">📖 講演内容</a>
-    <a href="#notices">⚠️ 注意事項</a>
-    <a href="#contact">📞 お問い合わせ</a>
+    <a href="#overview">開催概要</a>
+    <a href="#purpose">イベントの主旨</a>
+    <a href="#program">プログラム</a>
+    <a href="#performers">出演者紹介</a>
+    <a href="#schedule">タイムスケジュール</a>
+    <a href="#ticket">チケット</a>
+    <a href="#music">曲目紹介</a>
+    <a href="#lecture">講演内容</a>
+    <a href="#notices">注意事項</a>
+    <a href="#contact">お問い合わせ</a>
   </nav>
 </div>
 
